@@ -1,5 +1,5 @@
-const getRandomQuote = function() {
-    const quotes = [
+const getRandomQuote = function() { 
+    const quotes = [ // storing quotes in array
     {
         quote: "Technology is best when it brings people together.",
         author: "-Matt Mullenweg"
@@ -38,12 +38,12 @@ const getRandomQuote = function() {
     }
 ];
 
-    let arrayIndex = Math.floor(Math.random() * quotes.length);
-    document.getElementById('quote').innerHTML = quotes[arrayIndex].quote;
+    let arrayIndex = Math.floor(Math.random() * quotes.length); // generating random number for array index
+    document.getElementById('quote').innerHTML = quotes[arrayIndex].quote; //using generated random number, replacing the text on html
     document.getElementById('source').innerHTML = quotes[arrayIndex].author;
 
 }
-window.onload = function() {
+window.onload = function() { // to load the function as soon as the page is loaded
     getRandomQuote();
     document.getElementById('load-quote').addEventListener('click', getRandomQuote);
 }
