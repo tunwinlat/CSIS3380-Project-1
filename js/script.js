@@ -1,4 +1,4 @@
-const generateQuote = function() {
+const getRandomQuote = function() {
     const quotes = [
     {
         quote: "Technology is best when it brings people together.",
@@ -44,6 +44,6 @@ const generateQuote = function() {
 
 }
 window.onload = function() {
-    generateQuote();
-    document.getElementById('load-quote').addEventListener('click', generateQuote);
+    getRandomQuote();
+    document.getElementById('load-quote').addEventListener('click', getRandomQuote);
 }
